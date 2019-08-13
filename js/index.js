@@ -24,3 +24,15 @@ window.addEventListener("scroll", event =>
 window.addEventListener("resize", event =>
     headings.forEach(item =>
         item.style.color = 'green'));
+
+let paragraphs = document.querySelectorAll("p");
+
+window.addEventListener("keydown", event =>
+    paragraphs.forEach(item => item.style.backgroundColor = 'red' ));
+
+window.addEventListener("keyup", event =>
+    paragraphs.forEach(item => item.style.backgroundColor = 'white' ));
+
+window.addEventListener("load", event => alert("The page is loaded!"));
+
+window.addEventListener("copy", event => alert("You tried to copy something!"));
